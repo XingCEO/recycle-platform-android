@@ -1,0 +1,29 @@
+# Gradle / Android build outputs
+.gradle/
+**/build/
+.kotlin/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Local machine config (SDK path) — never commit
+local.properties
+
+# IDE
+.idea/
+*.iml
+.DS_Store
+
+# OMC / agent local state
+.omc/
+
+# Signing / secrets (safety net — none are tracked)
+*.jks
+*.keystore
+secrets.properties
+keystore.properties
+
+# Built artifacts
+*.apk
+*.aab
+*.ap_
