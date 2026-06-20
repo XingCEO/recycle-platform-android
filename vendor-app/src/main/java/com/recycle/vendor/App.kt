@@ -112,6 +112,8 @@ fun VendorApp(vm: VendorViewModel = viewModel()) {
                 Screen.BARCODE, Screen.AI -> RecycleScreen(vm, ui)
             }
         }
+        // Sideload self-update prompt (overlays whichever screen is shown).
+        UpdateGate()
     }
 }
 

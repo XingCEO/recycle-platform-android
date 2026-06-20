@@ -1,0 +1,6 @@
+{
+  "versionCode": 2,
+  "versionName": "1.1",
+  "apkUrl": "https://github.com/XingCEO/recycle-platform-android/releases/download/v1.1/user-app-debug.apk",
+  "notes": "修復登入過期（JWT）會卡住的問題，並加入 App 內自動更新。"
+}

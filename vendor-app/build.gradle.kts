@@ -14,9 +14,13 @@ android {
         targetSdk = 36
         versionCode = 2
         versionName = "1.1"
+        buildConfigField(
+            "String", "UPDATE_MANIFEST_URL",
+            "\"https://raw.githubusercontent.com/XingCEO/recycle-platform-android/main/update/vendor.json\""
+        )
     }
 
-    buildFeatures { compose = true }
+    buildFeatures { compose = true; buildConfig = true }
 
     // TFLite model must stay uncompressed so it can be memory-mapped from assets.
     androidResources { noCompress += "tflite" }

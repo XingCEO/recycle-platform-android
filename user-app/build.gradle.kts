@@ -12,8 +12,12 @@ android {
         targetSdk = 36
         versionCode = 2
         versionName = "1.1"
+        buildConfigField(
+            "String", "UPDATE_MANIFEST_URL",
+            "\"https://raw.githubusercontent.com/XingCEO/recycle-platform-android/main/update/user.json\""
+        )
     }
-    buildFeatures { compose = true }
+    buildFeatures { compose = true; buildConfig = true }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17

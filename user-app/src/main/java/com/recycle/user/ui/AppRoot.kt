@@ -49,5 +49,7 @@ fun AppRoot() {
                 onLoginSuccess = { loggedIn = true }
             )
         }
+        // Sideload self-update prompt (overlays whichever screen is shown).
+        UpdateGate()
     }
 }
